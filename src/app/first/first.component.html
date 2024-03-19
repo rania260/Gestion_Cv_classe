@@ -1,0 +1,22 @@
+<h1>data binding</h1>
+<!-- String interpolation -->
+<p>Hello my name is {{name}} </p>
+<!-- property binding: fy west l propriete -->
+<img [src]="imgUrl" alt="">
+<!-- event binding: n3adi data mel html lel ts -->
+<button (click)="change()" >Click me!</button><br>
+<!-- two way data binding -->
+<input type="text" [(ngModel)]="text" >
+<p> {{text}} </p>
+
+<h1>Exercice Data Binding</h1>
+
+<div>
+    <h1> My name is {{user.name}} and i'm {{user.age}} y.o </h1>
+    <img [src]="user.image" alt="">
+</div>
+
+<input type="text"  [(ngModel)]="myName">
+<p> {{myName}} </p>
+<button (click)="ChangeName()" > Change name </button>
+
