@@ -1,1 +1,9 @@
-<p>item-component works!</p>
+<!--<li (click)="sendCandToListe()" class="list-group-item">
+    <img src="../../assets/{{ oneCandidat.avatar }}" /> {{ oneCandidat.prenom }}
+    {{ oneCandidat.nom }}
+  </li>
+-->
+<li appCostumDirective (click)="sendCandToListe()" class="list-group-item">
+    <img src="../../assets/{{ oneCandidat.avatar }}" /> {{ oneCandidat.prenom }}
+    {{ oneCandidat.nom }}
+  </li>

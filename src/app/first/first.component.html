@@ -20,3 +20,19 @@
 <p> {{myName}} </p>
 <button (click)="ChangeName()" > Change name </button>
 
+<!-- directives -->
+<h1>ngIf</h1>
+<img *ngIf="display==true" [src]="im" alt="" >
+<button (click)="Changer()" >Click me</button>
+
+<h1>ngFor</h1>
+<h2 *ngFor="let item of cars"> {{item}} </h2>
+
+<div *ngFor="let items of students">
+    <h3> {{items.name}} </h3>
+    <p> {{items.age}} </p>
+</div>
+
+
+
+

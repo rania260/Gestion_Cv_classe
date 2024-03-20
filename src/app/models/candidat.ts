@@ -2,7 +2,7 @@ export class Candidat {
     //   public _id: number;
     //   public prenom: string;
     //   public nom: string;
-  
+
     constructor(
       public _id: number,
       public prenom: string,

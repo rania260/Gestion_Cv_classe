@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Candidat } from '../models/candidat';
 
 @Component({
   selector: 'app-item-component',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './item-component.component.css'
 })
 export class ItemComponentComponent {
+  @Input() oneCandidat!: Candidat;
+  @Output() candToListe = new EventEmitter<Candidat>();
 
+  sendCandToListe() {
+    this.candToListe.emit(this.oneCandidat);
+  }
 }

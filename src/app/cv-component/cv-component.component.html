@@ -1,2 +1,16 @@
-<app-liste-component></app-liste-component>
-<app-detail-component></app-detail-component>
+
+<div class="row">
+    <div class="col-5">
+        <app-liste-component
+        (candToCv)="recupererCand($event)"
+        [tabCands]="tabCandidats"
+      ></app-liste-component>
+    </div>
+    <div class="col-7">
+        @if (selectedCandidat) {
+        <app-detail-component [selCand]="selectedCandidat"></app-detail-component>
+    } @else {
+        <h3>Veuillez selectionner un candidat...</h3>
+        }
+    </div>
+</div>
