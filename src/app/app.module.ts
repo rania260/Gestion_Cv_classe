@@ -9,6 +9,9 @@ import { DetailComponentComponent } from './detail-component/detail-component.co
 import { ItemComponentComponent } from './item-component/item-component.component';
 import { FirstComponent } from './first/first.component';
 import { FormsModule } from '@angular/forms';
+import { HomeAccountComponent } from './accounts/home-account/home-account.component';
+import { AddAccountComponent } from './accounts/add-account/add-account.component';
+import { ItemAccountComponent } from './accounts/item-account/item-account.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { FormsModule } from '@angular/forms';
     ListeComponentComponent,
     DetailComponentComponent,
     ItemComponentComponent,
-    FirstComponent
+    FirstComponent,
+    HomeAccountComponent,
+    AddAccountComponent,
+    ItemAccountComponent
   ],
   imports: [
     BrowserModule,
