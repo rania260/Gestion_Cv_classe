@@ -1,11 +1,9 @@
+<label for="typeText">Account Name</label><br>
+<input #inpName type="text" class="form-control">
 
-    <label for="typeText">Account Name</label><br>
-    <input type="text" class="form-control">
-
-    <label for="">Account status</label>
-    <select name="" class="form-control">
-        <option *ngFor="let opt of allOption" [value]="opt"> {{opt}} </option>
-    </select>
-    <button (click)="sendToHome()" type="button" class="btn btn-primary btn-sm">Add Account</button>
-
-
+<label for="">Account status</label>
+<select #inpStatus name="" class="form-control">
+    <option *ngFor="let opt of allOption" [value]="opt"> {{opt}} </option>
+</select>
+<button (click)="sendToHome(inpName.value, inpStatus.value)" type="button" class="btn btn-primary btn-sm">Add
+    Account</button>

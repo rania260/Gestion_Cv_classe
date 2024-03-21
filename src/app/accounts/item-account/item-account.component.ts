@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ItemAccountComponent {
 
   @Input() oneAccount;
+  changeStatus(newStatus){
+    this.oneAccount.statut = newStatus;
+  }
   
 
 }

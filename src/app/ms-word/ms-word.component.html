@@ -1,0 +1,18 @@
+<div [ngStyle]="{
+    backgroundColor : background,
+    color : color,
+    fontSize: taille + 'px',
+    fontFamily: style
+}">
+    Exemple de NgStyle
+</div>
+
+<input [(ngModel)]="background" type="text" class="form-control" placeholder="entrer un backgroundColor">
+<input [(ngModel)]="color" type="text" class="form-control" placeholder="entrer un Color">
+<input #sz (change)="changeSize(sz.value)" type="number" class="form-control" placeholder="entrer la taille">
+<select  class="form-control" [(ngModel)]="style" name="" id="">
+    <option value=""></option>
+  <option value="garamond">Garamond</option>
+  <option value="arial">Arial</option>
+  <option value="Phosphate">phosphate</option>
+</select>

@@ -17,4 +17,8 @@ export class HomeAccountComponent {
     }
   ]
 
+  addNewAccount(newAcc){
+    this.tabAccounts.push(newAcc);
+  }
+
 }
