@@ -14,6 +14,9 @@ import { AddAccountComponent } from './accounts/add-account/add-account.componen
 import { ItemAccountComponent } from './accounts/item-account/item-account.component';
 import { DirectComponent } from './direct/direct.component';
 import { MsWordComponent } from './ms-word/ms-word.component';
+import { AddComponent } from './add/add.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { MsWordComponent } from './ms-word/ms-word.component';
     AddAccountComponent,
     ItemAccountComponent,
     DirectComponent,
-    MsWordComponent
+    MsWordComponent,
+    AddComponent,
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
